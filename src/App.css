@@ -1,1 +1,44 @@
+[data-theme="light-mode"] {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --heading-color: #444444;
+  --button-bg-color: black;
+  --button-text-color: white;
+}
 
+[data-theme="dark-mode"] {
+  --bg-color: #333333;
+  --text-color: #ffffff;
+  --heading-color: #eef833;
+  --button-bg-color: white;
+  --button-text-color: black;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  height: 100vh;
+  justify-content: center;
+}
+
+.app button {
+  border: none;
+  background-color: var(--button-bg-color);
+  padding: 8px;
+  color: var(--button-text-color);
+}
+
+.app h1 {
+  color: var(--heading-color);
+}
+
+.app p {
+  width: 60%;
+  color: var(--text-color);
+}
